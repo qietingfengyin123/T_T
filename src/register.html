@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/re.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="reg_wrap">
+        <div class="reg_inner">
+            <form method="POST" action="" class="form">
+                <ul>
+                    <li class="li1">
+                        <em></em>
+                        <p class="tel">
+                            <b class="icon_phone"></b>
+                            <input type="text" placeholder="请输入您的手机号">
+                        </p>
+                        <span class="reg_email">
+                            或<i><a href="#">邮箱注册</a></i>
+                        </span>
+                    </li>
+                    <li class="li2">
+                        <em></em>
+                        <p class="yzm">
+                            <b class="icon_code"></b>
+                            <input type="text" placeholder="请输入验证码">
+                        </p>
+                        <span class="yzm_img">
+                            <img
+                                src="https://www.lecuntao.com/shop/index.php?act=seccode&amp;op=makecode&amp;nchash=d2db95e3">
+                            <a href="#" class="ml5">换一张<em></em></a>
+                        </span>
+                    </li>
+                    <li class="li3">
+                        <em></em>
+                        <p class="note">
+                            <b class="icon_note"></b>
+                            <input type="text" placeholder="请输入短信验证码">
+                        </p>
+                        <input type="button" value="获取验证码" class="get_yzm">
+                    </li>
+                    <li class="li4">
+                        <em></em>
+                        <p style="border-color: rgb(187, 187, 187); border-width: 1px" class="reg_password">
+                            <b class="icon_lock"></b>
+                            <input type="password" placeholder="请输入密码">
+                        </p>
+                    </li>
+                    <li class="li5">
+                        <em></em>
+                        <p class="reg_password">
+                            <b class="icon_lock"></b>
+                            <input type="password" placeholder="请再次输入密码">
+                        </p>
+                    </li>
+                </ul>
+                <dl class="reg_login">
+                    <dt>点击注册表示您同意乐村淘
+                        <a href="#">《服务协议》</a>。
+                    </dt>
+                    <dd>
+                        <input type="submit" id="register" value="注册">
+                        <input type="button" id="login" value="已有账号?请登录">
+                            <i></i>
+                    </dd>
+                </dl>
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="script/js/jquery.js"></script>
+    <script>
+        //引入公共部分的头部和底部
+        $('.header').load('reg_login_header.html');
+        $('.footer').load('reg_login_footer.html');
+    </script>
+</body>
+
+</html>

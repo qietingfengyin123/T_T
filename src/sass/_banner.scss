@@ -1,0 +1,360 @@
+@charset "utf-8";
+$dot:12px;
+$borderLine:1px solid #e9e8ed;
+
+.banner{
+    height: 505px;
+}
+
+.banner_inner{
+    width: $innerwidth;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner_l{
+    width: 212px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    li{
+        height: 44px;
+        background-color: #dd0c1d;
+        border-bottom: 1px solid #e02e3c;
+        position: relative;
+        z-index: 2;
+        a{
+            padding-left: 16px;
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: bold;
+            display: inline-block;
+            height: 44px;
+            line-height: 44px;
+        }
+        &:hover{
+            background: #ffffff;
+            a{
+                color: #dd0c1d;
+            }
+            .icon_bg1{
+                background-position: -108px-22 0;
+            }
+            .icon_bg2{
+                background-position: -397px-22 0;
+            }
+            .icon_bg3{
+                background-position: -302px-22 -33px;
+            }
+            .icon_bg4{
+                background-position: -208px-22 0px;
+            }
+            .icon_bg5{
+                background-position: -154px-22 0px;
+            }
+            .icon_bg6{
+                background-position: -205px-22 -34px;
+            }
+            .icon_bg7{
+                background-position: -351px-22 0px;
+            }
+            .icon_bg8{
+                background-position: -255px-22 0px;
+            }
+            .icon_bg9{
+                background-position: -158px-22 -35px;
+            }
+            .icon_bg10{
+                background-position: -108px-22 -36px;
+            }
+            .icon_bg11{
+                background-position: -59px-22 -34px;
+            }
+        }
+    }
+}
+
+.ico{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+    margin-right: 6px;
+    padding-top: 12px;
+    margin-right: 15px;
+    overflow: hidden;
+    b{
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        height: 22px;
+        background: url(../img/isprite.png) no-repeat;
+    }
+    .icon_bg1{
+        background-position: -108px 0;
+    }
+    .icon_bg2{
+        background-position: -397px 0;
+    }
+    .icon_bg3{
+        background-position: -302px -33px;
+    }
+    .icon_bg4{
+        background-position: -208px 0px;
+    }
+    .icon_bg5{
+        background-position: -154px 0px;
+    }
+    .icon_bg6{
+        background-position: -205px -34px;
+    }
+    .icon_bg7{
+        background-position: -351px 0px;
+    }
+    .icon_bg8{
+        background-position: -255px 0px;
+    }
+    .icon_bg9{
+        background-position: -158px -35px;
+    }
+    .icon_bg10{
+        background-position: -108px -36px;
+    }
+    .icon_bg11{
+        background-position: -59px -34px;
+    }
+}
+
+.icon_arrow{
+    background: url(../img/isprite.png) no-repeat -495px -379px;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    position: absolute;
+    right: 14px;
+    top: 19px;
+}
+
+.banner_c{//轮播图的盒子
+    width: 768px;
+    height: 495px;
+    margin: 10px 10px 0px 222px;
+    float: left;
+    position: relative;
+    li{
+        display: none;
+    }
+    .active{
+        display: block;
+        opacity: 1;
+    }
+    .btn_left{//轮播图左边的按钮
+        width: 30px;
+        height: 84px;
+        position: absolute;
+        left: 19px;
+        top: 206px;
+        background: url(../img/isprite.png) 0px -212px no-repeat;
+        z-index: 3;
+    }
+    .btn_right{//轮播图右边的按钮
+        @extend .btn_left;//继承左边按钮的属性
+        left: 719px;//更改右边按钮继承来的定位，与左边对称定位应为right：19px；原先有left属性，换算成left为：盒子的宽度减去left定位的值及按钮自身的宽度
+        background-position: -30px -212px;//覆盖背景图片精灵图原先的position
+    }
+}
+
+.banner_btns{//轮播图底下的小圆点
+    width: 100%;
+    height: $dot;
+    line-height: $dot;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    text-align: center;
+    a{
+        width: $dot;
+        height: $dot;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .active_dot{//当前的小圆点
+        background-color: #ffbe22;
+    }
+}
+
+.banner_r{
+    width: 200px;
+    float: right;
+    padding-top: 10px;
+    .banner_r_top{
+        width: 198px;
+        @include borderstyle( 1px,#e9e8ed,solid);
+        background-color: #f9f9f9;
+        margin-bottom: 10px;
+        .welcome{
+            width: 178px;
+            padding: 11px 10px 16px 10px;
+            position: relative;
+            height: 50px;
+        }
+        .log_reg{
+            width: 176px;
+            padding: 0 11px;
+            display: table;
+            font-size: 14px;
+            margin: 0 auto 15px auto;
+            .login_btn{
+                width: 83px;
+                height: 24px;
+                line-height: 24px;
+                @include borderstyle(1px,#e60012,solid);
+                background-color: #e60012;
+                color: #fff;
+                text-align: center;
+                float: left;
+                border-radius: 3px;
+            }
+            .register_btn{
+                width: 83px;
+                height: 24px;
+                line-height: 24px;
+                @include borderstyle(1px,#dfdfdf,solid);
+                text-align: center;
+                float: right;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.welcome_l{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+
+.welcome_r{
+    padding-top: 5px;
+    float: left;
+    h2{
+        font-size: 14px;
+        color: #e60012;
+        font-style: normal;
+        font-weight: 400;
+    } 
+    h3{
+        font-size: 12px;
+        line-height: 22px;
+        font-style: normal;
+        font-weight: 400;
+        color:#666;
+    }
+}
+
+.banner_r_middle{
+    @extend .banner_r_top;
+}
+
+.news_title{
+    width: 170px;
+    padding: 0 14px;
+    height: 35px;
+    line-height: 35px;
+    display: table;
+    border-bottom: 1px dashed #e0e0e0;
+    h2{
+        height: 35px;
+        line-height: 35px;
+        font-size: 14px;
+        float: left;
+        font-style: normal;
+        font-weight: 400;
+        a{
+            color: #e60012;
+        }
+    }
+    h3{
+        height: 35px;
+        line-height: 35px;
+        float: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        a{
+           color: #333; 
+           i{
+            width: 9px;
+            height: 35px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../img/isprite.png) -39px -16px no-repeat;
+           }
+        }       
+    }
+}  
+
+.news_list{
+    width: 176px;
+    padding: 6px 8px 8px 14px;
+    li{
+        height: 31px;
+        font: 12px/1.5 arial,tahoma,宋体;
+        line-height: 30px;
+        a{
+            color: #666;
+        }
+    }
+}
+
+.banner_r_bottom{
+    width: 198px;
+    display: table;
+    padding-left: 1px;
+    border-top: $borderLine;
+    border-left: $borderLine;
+    background-color: #fff;
+    li{
+        width: 65px;
+        height: 68px;
+        float: left;
+        border-right: $borderLine;
+        border-bottom: $borderLine;
+        a{
+            color: #333;
+            font-size: 12px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            padding-top: 40px;
+            display: block;
+            background: url(../img/isprite.png) no-repeat;
+        }
+        .icon_cz{
+            background-position: 22px -57px;
+        }
+        .icon_dk{
+            background-position: -48px -57px;
+        }
+        .icon_cx{
+            background-position: -126px -57px;
+        }
+        .icon_lx{
+            background-position: -201px -57px;
+        }
+        .icon_ycp{
+            background-position: -280px -57px;
+        }
+        .icon_dyp{
+            background-position: -358px -57px;
+        }
+    }
+}
+
+
+
+

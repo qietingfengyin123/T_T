@@ -1,0 +1,226 @@
+@charset "UTF-8";
+body {
+  background: #f8f8f8;
+}
+
+.head_inner {
+  width: 1000px;
+  height: 97px;
+  margin: 0 auto;
+}
+.head_inner h2 {
+  float: right;
+  color: #333333;
+  font-size: 18px;
+  padding-top: 67px;
+  font-style: normal;
+  font-weight: 400;
+}
+.head_inner h2 a {
+  color: #333;
+}
+.head_inner p {
+  float: left;
+  height: 73px;
+  line-height: 73px;
+  padding-top: 14px;
+}
+.head_inner p span {
+  float: left;
+  height: 73px;
+  padding-right: 21px;
+}
+.head_inner p i {
+  float: left;
+  width: 1px;
+  height: 17px;
+  background: #b5b5b5;
+  margin-top: 27px;
+}
+.head_inner p b {
+  float: left;
+  padding-left: 21px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.foot_inner {
+  width: 1000px;
+  text-align: center;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 16px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  font-family: "Arial";
+}
+.foot_inner p {
+  line-height: 32px;
+  color: #666666;
+  font-size: 14px;
+}
+.foot_inner p a {
+  color: #666666;
+  font-size: 14px;
+}
+
+.reg_wrap {
+  width: 100%;
+  border-top: 2px solid #eb0000;
+  padding-top: 25px;
+}
+.reg_wrap .reg_inner {
+  width: 718px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 42px 0 50px 282px;
+}
+.reg_wrap .reg_inner li {
+  position: relative;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
+.tel, .yzm, .note, .reg_password {
+  float: left;
+  width: 438px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #bbbbbb;
+  background: #faf9f9;
+  position: relative;
+}
+.tel b, .yzm b, .note b, .reg_password b {
+  width: 13px;
+  height: 21px;
+  background: url(../img/login_sprite.png) no-repeat -41px 0;
+  margin: 14px 16px 0 17px;
+  float: left;
+}
+.tel input, .yzm input, .note input, .reg_password input {
+  width: 385px;
+  float: left;
+  height: 48px;
+  background: #faf9f9;
+  line-height: 48px;
+  border: 0;
+  color: #333333;
+  font-size: 14px;
+  outline: none;
+}
+
+.yzm {
+  width: 259px;
+}
+.yzm b {
+  width: 26px;
+  height: 20px;
+  background-position: 0 -71px;
+  margin: 14px 14px 0 15px;
+}
+.yzm input {
+  width: 110px;
+}
+
+.note {
+  width: 284px;
+}
+.note b {
+  width: 17px;
+  height: 17px;
+  background-position: -41px -28px;
+  margin: 16px 16px 0 17px;
+}
+.note input {
+  width: 234px;
+}
+
+.reg_password b {
+  width: 19px;
+  height: 21px;
+  background-position: 0px -45px;
+  margin: 14px 16px 0 17px;
+}
+
+.reg_email, .yzm_img {
+  float: left;
+  line-height: 48px;
+  padding-left: 10px;
+  color: #666666;
+  font-size: 14px;
+}
+.reg_email i, .yzm_img i {
+  font-style: normal;
+}
+.reg_email i a, .yzm_img i a {
+  color: #03a9f4;
+}
+
+.yzm_img a {
+  display: inline-block;
+  width: 62px;
+  line-height: 26px;
+  padding: 0 5px 0 12px;
+  color: #333;
+}
+.yzm_img a em {
+  display: block;
+  float: right;
+  width: 19px;
+  height: 16px;
+  background: url(../img/login_sprite.png) no-repeat;
+  margin: 5px 0 0 0;
+  font-style: normal;
+}
+
+.get_yzm {
+  float: left;
+  margin-left: 14px;
+  width: 138px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid #bbbbbb;
+  background: #faf9f9;
+  font-size: 14px;
+  font-family: "宋体";
+  outline: none;
+  cursor: pointer;
+}
+
+.reg_login dt {
+  font-size: 14px;
+  padding: 25px 0;
+  color: #000;
+}
+.reg_login dt a {
+  color: #eb0000;
+}
+.reg_login dd #register {
+  width: 440px;
+  height: 50px;
+  line-height: 50px;
+  background: #eb0000;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+}
+.reg_login dd #login {
+  width: 438px;
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+  border: 1px solid #03a9f4;
+  text-align: center;
+  color: #03a9f4;
+  font-size: 18px;
+  margin-top: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=register.css.map */

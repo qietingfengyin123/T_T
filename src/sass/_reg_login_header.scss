@@ -1,0 +1,41 @@
+.head_inner{
+    width: 1000px;
+    height: 97px;
+    margin: 0 auto;
+    h2{
+        float: right;
+        color: #333333;
+        font-size: 18px;
+        padding-top: 67px;
+        font-style: normal;
+        font-weight: 400;
+        a{
+            color: #333;
+        }
+    }
+    p{
+        float: left;
+        height: 73px;
+        line-height: 73px;
+        padding-top: 14px;
+        span{
+            float: left;
+            height: 73px;
+            padding-right: 21px;
+        }
+        i{
+            float: left;
+            width: 1px;
+            height: 17px;
+            background: #b5b5b5;
+            margin-top: 27px;
+        }
+        b{
+            float: left;
+            padding-left: 21px;
+            color: #333333;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+@charset "utf-8";
+.wrap_inner{
+    width: 1200px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 342px;
+}
+
+.djy{
+    width: 370px;
+    float: left;
+    h4{
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 4px;
+        font-style: normal;
+        font-weight: 400;
+        a{
+            color: #333;
+        }
+    }
+    h5{
+        color: #999999;
+        line-height: 17px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.policy{
+    width: 364px;
+    float: left;
+    margin-left: 41px;
+    .myscroll{
+        height: 141px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}
+
+.news_info{
+    width: 399px;
+    float: left;
+    margin-left: 26px;
+    .myscroll{
+        height: 265px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+}
+
+.news_title1{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 24px;
+    line-height: 35px;
+    background: url(../img/isprite.png) -495px -106px no-repeat;
+    margin-bottom: 17px;
+    a{
+        color: #333;
+    }
+}
+
+.news_title2{
+    @extend .news_title1;
+    background-position: -495px -149px;
+    a{
+        color:#333;
+    }
+}
+
+.news_title3{
+    @extend .news_title2;
+    background-position: -495px -190px;
+    a{
+        color:#333;
+    }
+}
+
+.news{
+    width: 364px;
+    display: table;
+    li{
+        width: 170px;
+        height: 115px;
+        float: left;
+        margin-right: 12px;
+        position: relative;
+        img{
+            width: 170px;
+            height: 115px;
+        }
+        h6{
+            width: 162px;
+            height: 26px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            padding-left: 8px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(https://www.lecuntao.com/homenew/templates/default/images/ubg.png?v=ad88fcaaf1) 0px 0px repeat-x;
+            a{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
+
+.newscroll{
+    width:364px;
+    background: url(https://www.lecuntao.com/homenew/templates/default/images/nubg.png?v=a061b4378f) 3px 12px no-repeat;
+    li{
+        width: 346px;
+        height: 47px;
+        padding-left: 18px;
+        vertical-align: text-top;
+        background: url(../img/isprite.png) -492px -235px no-repeat;
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            a{
+                line-height: 17px;
+                color: #333;
+            }
+        }
+        .date{
+            font-size: 12px;
+            line-height: 17px;
+            display: table;
+            color: #999;
+            font-style: normal;
+        }
+    }
+}

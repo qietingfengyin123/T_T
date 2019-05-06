@@ -1,0 +1,1194 @@
+@charset "UTF-8";
+.header {
+  border-bottom: 1px solid #e7e7e7;
+  background: #f1f1f1;
+}
+
+.head-inner {
+  width: 1200px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.head-inner h2 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  float: left;
+}
+
+.head_nav {
+  float: right;
+}
+.head_nav li {
+  min-width: 80px;
+  float: left;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  font-size: 12px;
+}
+.head_nav li a {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+.head_nav li i {
+  width: 13px;
+  height: 13px;
+  margin-left: 3px;
+  display: inline-block;
+  background: url(../img/isprite.png) 4px 4px no-repeat;
+  vertical-align: middle;
+}
+.head_nav li b {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #dfdfdf;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.myindent {
+  width: 79px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -1px;
+  top: 32px;
+  border: solid 1px #F0F0F0;
+  border-top-color: #ffffff;
+}
+
+.nav {
+  height: 165px;
+}
+.nav .nav_top {
+  width: 1200px;
+  margin: 0 auto;
+  height: 120px;
+}
+.nav .nav_top h2 {
+  width: 240px;
+  height: 117px;
+  float: left;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+.nav .nav_top .nav_top_right {
+  width: 960px;
+  padding-top: 37px;
+  float: left;
+  position: relative;
+}
+.nav .nav_top .nav_top_right .logo_right {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+
+.area {
+  width: 84px;
+  float: left;
+  text-align: center;
+}
+.area dt a {
+  color: #333;
+  line-height: 26px;
+  font-weight: bold;
+}
+.area dd {
+  width: 61px;
+  height: 21px;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+}
+.area dd a {
+  color: #a0a0a0;
+  font-size: 12px;
+}
+.area dd .area_info {
+  display: none;
+}
+
+.search {
+  width: 439px;
+  float: left;
+  margin-left: 58px;
+}
+.search dt {
+  display: table;
+}
+.search dt .search_input {
+  width: 256px;
+  height: 32px;
+  border: 1px #e60012 solid;
+  border-right: none;
+  padding-left: 40px;
+  font-size: 12px;
+  color: #666666;
+  float: left;
+  outline: none;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/sc_fdj.png?v=42a074f765) 12px 7px no-repeat;
+}
+.search dt .search_l_btn, .search dt .search_r_btn {
+  width: 70px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  float: left;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  background-color: #e60012;
+  margin-right: 2px;
+}
+.search dt .search_r_btn {
+  background-color: #666666;
+  margin: 0;
+}
+.search dd a {
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+  margin-right: 15px;
+  color: #999;
+  font-family: "宋体", Arial;
+}
+
+.mycart {
+  width: 138px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #dfdfdf;
+  background-color: #f9f9f9;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.mycart b {
+  width: 18px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  right: 18px;
+  top: -3px;
+  color: #ffffff;
+  background: url(../img/isprite.png) -19px 0px no-repeat;
+}
+.mycart a {
+  width: 92px;
+  height: 32px;
+  display: block;
+  color: #333;
+  font-size: 12px;
+  padding-left: 46px;
+  background: url(../img/isprite.png) -459px 8px no-repeat;
+}
+.mycart a i {
+  width: 15px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/isprite.png) -33px -17px no-repeat;
+}
+
+.nav_bottom {
+  height: 43px;
+  border-bottom: 2px solid #e60012;
+}
+
+.nav_bottom_inner {
+  width: 1200px;
+  height: 43px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav_bottom_inner .nav_b_l {
+  float: left;
+  width: 212px;
+  font-size: 16px;
+  height: 43px;
+  background-color: #f32613;
+  padding-bottom: 2px;
+}
+.nav_bottom_inner .nav_b_l a {
+  width: 212px;
+  height: 43px;
+  line-height: 43px;
+  display: block;
+  padding-left: 16px;
+  color: #fff;
+}
+.nav_bottom_inner .nav_b_l a .icon {
+  width: 21px;
+  height: 43px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: url(../img/isprite.png) -59px 15px no-repeat;
+}
+.nav_bottom_inner .nav_b_r {
+  width: 960px;
+  float: left;
+  margin-left: 4px;
+}
+.nav_bottom_inner .nav_b_r li {
+  float: left;
+  line-height: 43px;
+  height: 43px;
+  font-size: 15px;
+  padding: 0 18px;
+}
+.nav_bottom_inner .nav_b_r li a {
+  color: #000;
+}
+.nav_bottom_inner .nav_b_r li .red_a {
+  color: #e60012;
+}
+.nav_bottom_inner .nav_b_r li:hover a {
+  color: #e60012;
+}
+
+.banner {
+  height: 505px;
+}
+
+.banner_inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner_l {
+  width: 212px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+.banner_l li {
+  height: 44px;
+  background-color: #dd0c1d;
+  border-bottom: 1px solid #e02e3c;
+  position: relative;
+  z-index: 2;
+}
+.banner_l li a {
+  padding-left: 16px;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+}
+.banner_l li:hover {
+  background: #ffffff;
+}
+.banner_l li:hover a {
+  color: #dd0c1d;
+}
+.banner_l li:hover .icon_bg1 {
+  background-position: -130px 0;
+}
+.banner_l li:hover .icon_bg2 {
+  background-position: -419px 0;
+}
+.banner_l li:hover .icon_bg3 {
+  background-position: -324px -33px;
+}
+.banner_l li:hover .icon_bg4 {
+  background-position: -230px 0px;
+}
+.banner_l li:hover .icon_bg5 {
+  background-position: -176px 0px;
+}
+.banner_l li:hover .icon_bg6 {
+  background-position: -227px -34px;
+}
+.banner_l li:hover .icon_bg7 {
+  background-position: -373px 0px;
+}
+.banner_l li:hover .icon_bg8 {
+  background-position: -277px 0px;
+}
+.banner_l li:hover .icon_bg9 {
+  background-position: -180px -35px;
+}
+.banner_l li:hover .icon_bg10 {
+  background-position: -130px -36px;
+}
+.banner_l li:hover .icon_bg11 {
+  background-position: -81px -34px;
+}
+
+.ico {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: top;
+  margin-right: 6px;
+  padding-top: 12px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+.ico b {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  height: 22px;
+  background: url(../img/isprite.png) no-repeat;
+}
+.ico .icon_bg1 {
+  background-position: -108px 0;
+}
+.ico .icon_bg2 {
+  background-position: -397px 0;
+}
+.ico .icon_bg3 {
+  background-position: -302px -33px;
+}
+.ico .icon_bg4 {
+  background-position: -208px 0px;
+}
+.ico .icon_bg5 {
+  background-position: -154px 0px;
+}
+.ico .icon_bg6 {
+  background-position: -205px -34px;
+}
+.ico .icon_bg7 {
+  background-position: -351px 0px;
+}
+.ico .icon_bg8 {
+  background-position: -255px 0px;
+}
+.ico .icon_bg9 {
+  background-position: -158px -35px;
+}
+.ico .icon_bg10 {
+  background-position: -108px -36px;
+}
+.ico .icon_bg11 {
+  background-position: -59px -34px;
+}
+
+.icon_arrow {
+  background: url(../img/isprite.png) no-repeat -495px -379px;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 14px;
+  top: 19px;
+}
+
+.banner_c {
+  width: 768px;
+  height: 495px;
+  margin: 10px 10px 0px 222px;
+  float: left;
+  position: relative;
+}
+.banner_c li {
+  display: none;
+}
+.banner_c .active {
+  display: block;
+  opacity: 1;
+}
+.banner_c .btn_left, .banner_c .btn_right {
+  width: 30px;
+  height: 84px;
+  position: absolute;
+  left: 19px;
+  top: 206px;
+  background: url(../img/isprite.png) 0px -212px no-repeat;
+  z-index: 3;
+}
+.banner_c .btn_right {
+  left: 719px;
+  background-position: -30px -212px;
+}
+
+.banner_btns {
+  width: 100%;
+  height: 12px;
+  line-height: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  text-align: center;
+}
+.banner_btns a {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.banner_btns .active_dot {
+  background-color: #ffbe22;
+}
+
+.banner_r {
+  width: 200px;
+  float: right;
+  padding-top: 10px;
+}
+.banner_r .banner_r_top, .banner_r .banner_r_middle {
+  width: 198px;
+  border: 1px #e9e8ed solid;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+}
+.banner_r .banner_r_top .welcome, .banner_r .banner_r_middle .welcome {
+  width: 178px;
+  padding: 11px 10px 16px 10px;
+  position: relative;
+  height: 50px;
+}
+.banner_r .banner_r_top .log_reg, .banner_r .banner_r_middle .log_reg {
+  width: 176px;
+  padding: 0 11px;
+  display: table;
+  font-size: 14px;
+  margin: 0 auto 15px auto;
+}
+.banner_r .banner_r_top .log_reg .login_btn, .banner_r .banner_r_middle .log_reg .login_btn {
+  width: 83px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px #e60012 solid;
+  background-color: #e60012;
+  color: #fff;
+  text-align: center;
+  float: left;
+  border-radius: 3px;
+}
+.banner_r .banner_r_top .log_reg .register_btn, .banner_r .banner_r_middle .log_reg .register_btn {
+  width: 83px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px #dfdfdf solid;
+  text-align: center;
+  float: right;
+  border-radius: 3px;
+}
+
+.welcome_l {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+
+.welcome_r {
+  padding-top: 5px;
+  float: left;
+}
+.welcome_r h2 {
+  font-size: 14px;
+  color: #e60012;
+  font-style: normal;
+  font-weight: 400;
+}
+.welcome_r h3 {
+  font-size: 12px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+}
+
+.news_title {
+  width: 170px;
+  padding: 0 14px;
+  height: 35px;
+  line-height: 35px;
+  display: table;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.news_title h2 {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  float: left;
+  font-style: normal;
+  font-weight: 400;
+}
+.news_title h2 a {
+  color: #e60012;
+}
+.news_title h3 {
+  height: 35px;
+  line-height: 35px;
+  float: right;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.news_title h3 a {
+  color: #333;
+}
+.news_title h3 a i {
+  width: 9px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/isprite.png) -39px -16px no-repeat;
+}
+
+.news_list {
+  width: 176px;
+  padding: 6px 8px 8px 14px;
+}
+.news_list li {
+  height: 31px;
+  font: 12px/1.5 arial,tahoma,宋体;
+  line-height: 30px;
+}
+.news_list li a {
+  color: #666;
+}
+
+.banner_r_bottom {
+  width: 198px;
+  display: table;
+  padding-left: 1px;
+  border-top: 1px solid #e9e8ed;
+  border-left: 1px solid #e9e8ed;
+  background-color: #fff;
+}
+.banner_r_bottom li {
+  width: 65px;
+  height: 68px;
+  float: left;
+  border-right: 1px solid #e9e8ed;
+  border-bottom: 1px solid #e9e8ed;
+}
+.banner_r_bottom li a {
+  color: #333;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  padding-top: 40px;
+  display: block;
+  background: url(../img/isprite.png) no-repeat;
+}
+.banner_r_bottom li .icon_cz {
+  background-position: 22px -57px;
+}
+.banner_r_bottom li .icon_dk {
+  background-position: -48px -57px;
+}
+.banner_r_bottom li .icon_cx {
+  background-position: -126px -57px;
+}
+.banner_r_bottom li .icon_lx {
+  background-position: -201px -57px;
+}
+.banner_r_bottom li .icon_ycp {
+  background-position: -280px -57px;
+}
+.banner_r_bottom li .icon_dyp {
+  background-position: -358px -57px;
+}
+
+.main_1 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_2 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_3 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_4 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_5 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_6 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_7 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_8 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_9 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_10 {
+  height: 516px;
+  margin-top: 35px;
+}
+
+.main_floor {
+  width: 1200px;
+  margin: 35px auto 0 auto;
+}
+.main_floor .floor_title {
+  height: 52px;
+  line-height: 52px;
+  background: transparent;
+}
+.main_floor .floor_title .floor_h2 {
+  padding-left: 40px;
+  position: relative;
+  font-size: 20px;
+  color: #000000;
+}
+.main_floor .floor_title .floor_h2 .icon_floor {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 21px;
+  height: 35px;
+  padding-right: 10px;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/lct_floor.png?v=b52157f53a) no-repeat 0 0;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  line-height: 35px;
+}
+.main_floor .floor_bottom_l {
+  width: 300px;
+  float: left;
+}
+
+.floor_l_base {
+  width: 300px;
+  height: 177px;
+  background: #e0aaf8;
+}
+
+.floor_l_base_info {
+  padding: 0px 6px 0px 15px;
+}
+.floor_l_base_info li {
+  height: 43px;
+  line-height: 43px;
+  border-bottom: 1px solid #db8cff;
+}
+.floor_l_base_info li a {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 4px;
+  width: 62px;
+  font-size: 12px;
+}
+.floor_l_base_info li a span {
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px 7px 0px 7px;
+  background: #d378fb;
+}
+
+.main_2 .floor_l_base {
+  background: #2ed0ff;
+}
+.main_2 .floor_l_base li {
+  border-bottom: 1px solid #00c3fa;
+}
+.main_2 .floor_l_base li span {
+  background: #00c3fa;
+}
+
+.main_3 .floor_l_base {
+  background: #fe522f;
+}
+.main_3 .floor_l_base li {
+  border-bottom: 1px solid #ee4a2a;
+}
+.main_3 .floor_l_base li span {
+  background: #ee4a2a;
+}
+
+.main_5 .floor_l_base {
+  background: #c1382a;
+}
+.main_5 .floor_l_base li {
+  border-bottom: 1px solid #8f1003;
+}
+.main_5 .floor_l_base li span {
+  background: #8f1003;
+}
+
+.separator1, .separator2, .separator3, .separator4, .separator5 {
+  background: #e0aaf8;
+  width: 1200px;
+  height: 2px;
+}
+
+.separator2 {
+  background: #2ed0ff;
+}
+
+.separator3 {
+  background: #fe522f;
+}
+
+.separator4 {
+  background: #e0aaf8;
+}
+
+.separator5 {
+  background: #c1382a;
+}
+
+.wrap_inner {
+  width: 1200px;
+  display: table;
+  margin: 0 auto;
+  margin-top: 35px;
+  height: 342px;
+}
+
+.djy {
+  width: 370px;
+  float: left;
+}
+.djy h4 {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+}
+.djy h4 a {
+  color: #333;
+}
+.djy h5 {
+  color: #999999;
+  line-height: 17px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.policy {
+  width: 364px;
+  float: left;
+  margin-left: 41px;
+}
+.policy .myscroll {
+  height: 141px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.news_info {
+  width: 399px;
+  float: left;
+  margin-left: 26px;
+}
+.news_info .myscroll {
+  height: 265px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.news_title1, .news_title2, .news_title3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 24px;
+  line-height: 35px;
+  background: url(../img/isprite.png) -495px -106px no-repeat;
+  margin-bottom: 17px;
+}
+.news_title1 a, .news_title2 a, .news_title3 a {
+  color: #333;
+}
+
+.news_title2, .news_title3 {
+  background-position: -495px -149px;
+}
+.news_title2 a, .news_title3 a {
+  color: #333;
+}
+
+.news_title3 {
+  background-position: -495px -190px;
+}
+.news_title3 a {
+  color: #333;
+}
+
+.news {
+  width: 364px;
+  display: table;
+}
+.news li {
+  width: 170px;
+  height: 115px;
+  float: left;
+  margin-right: 12px;
+  position: relative;
+}
+.news li img {
+  width: 170px;
+  height: 115px;
+}
+.news li h6 {
+  width: 162px;
+  height: 26px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/ubg.png?v=ad88fcaaf1) 0px 0px repeat-x;
+}
+.news li h6 a {
+  color: #ffffff;
+}
+
+.newscroll {
+  width: 364px;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/nubg.png?v=a061b4378f) 3px 12px no-repeat;
+}
+.newscroll li {
+  width: 346px;
+  height: 47px;
+  padding-left: 18px;
+  vertical-align: text-top;
+  background: url(../img/isprite.png) -492px -235px no-repeat;
+}
+.newscroll li p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.newscroll li p a {
+  line-height: 17px;
+  color: #333;
+}
+.newscroll li .date {
+  font-size: 12px;
+  line-height: 17px;
+  display: table;
+  color: #999;
+  font-style: normal;
+}
+
+.info {
+  width: 100%;
+  margin: 65px auto 0 auto;
+  background-color: #f9f9f9;
+  display: table;
+  border-top: 1px solid #f1f1f1;
+}
+.info .info_inner {
+  width: 1171px;
+  padding-left: 29px;
+  height: 214px;
+  padding-top: 49px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  display: table;
+  position: relative;
+}
+
+.info_dl {
+  width: 166px;
+  float: left;
+}
+.info_dl dt {
+  font-size: 18px;
+  line-height: 43px;
+  height: 43px;
+  color: #333333;
+}
+.info_dl dt a {
+  color: #333333;
+}
+.info_dl dd {
+  line-height: 26px;
+  height: 26px;
+  font-size: 12px;
+  position: relative;
+}
+.info_dl dd a {
+  color: #999999;
+}
+
+.ewm {
+  position: absolute;
+  left: 57px;
+  top: 21px;
+  display: none;
+  width: 108px;
+  height: 143px;
+}
+
+.wx, .wb {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 11px;
+  background: url(../img/isprite.png) -338px -142px no-repeat;
+}
+
+.wb {
+  background-position: -306px -142px;
+}
+
+.qrcode {
+  padding-top: 15px;
+  float: right;
+  display: table;
+}
+.qrcode li {
+  width: 90px;
+  margin-right: 8px;
+  float: left;
+}
+.qrcode li h2 {
+  line-height: 27px;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #666;
+}
+
+.icon_car {
+  width: 116px;
+  height: 58px;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/car.png?v=1c53c827f9) 0 0 no-repeat;
+  position: absolute;
+  left: 4px;
+  top: -22px;
+}
+
+.icon_home {
+  width: 252px;
+  height: 109px;
+  background: url(https://www.lecuntao.com/homenew/templates/default/images/home.png?v=5858808d31) 0 0 no-repeat;
+  position: absolute;
+  right: 9px;
+  top: -65px;
+}
+
+.footer {
+  height: 184px;
+  background: #000000;
+}
+
+.ft_inner {
+  width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+  padding-bottom: 20px;
+  position: relative;
+}
+.ft_inner p {
+  margin-top: 3px;
+  font-size: 14px;
+  height: 22px;
+}
+.ft_inner p a {
+  color: #fff;
+}
+.ft_inner p .dim {
+  color: #666;
+}
+
+.ft_nav {
+  width: 1200px;
+  padding-top: 13px;
+  height: 28px;
+}
+.ft_nav li {
+  float: left;
+  line-height: 28px;
+  font-size: 14px;
+}
+.ft_nav li a {
+  color: #fff;
+  margin: 0 8px;
+}
+.ft_nav li .a_extra {
+  margin: 0 8px 0 0;
+}
+
+.ft_base {
+  position: absolute;
+  top: 132px;
+  left: 500px;
+}
+.ft_base li {
+  float: left;
+  margin-left: 3px;
+}
+.ft_base li .ft_img_2 {
+  width: 103px;
+  height: 32px;
+}
+
+.right_nav {
+  width: 34px;
+  height: 600px;
+  background: url(../img/bg34.png) repeat-y;
+  position: fixed;
+  right: -1px;
+  bottom: 150px;
+}
+.right_nav ul {
+  position: absolute;
+  top: 190px;
+  left: 0px;
+  width: 34px;
+}
+.right_nav ul li {
+  position: relative;
+}
+.right_nav ul li .my_portrait, .right_nav ul li .floor_nav_info, .right_nav ul li .myfavorite {
+  display: block;
+  width: 34px;
+  height: 35px;
+  color: #d8d8d8;
+  font-size: 14px;
+  background: #393b40;
+  border-radius: 2px 0 0 2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+}
+.right_nav ul li .floor_nav_info {
+  line-height: 16px;
+  width: 34px;
+  height: 116px;
+  color: #fff;
+}
+.right_nav ul li .floor_nav_info .shop_car {
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: 7px;
+  left: 6px;
+  background: url(../img/ibar_sprites.png) no-repeat;
+  background-position: -35px -31px;
+}
+.right_nav ul li .floor_nav_info .nav_car {
+  width: 16px;
+  display: block;
+  height: 48px;
+  margin: 34px 0 0 10px;
+  cursor: pointer;
+}
+.right_nav .right_nav_bottom {
+  top: 535px;
+}
+.right_nav .right_nav_bottom .return_top, .right_nav .right_nav_bottom .small_ewm {
+  display: block;
+  width: 34px;
+  height: 35px;
+  color: #d8d8d8;
+  font-size: 14px;
+  background: #393b40;
+  border-radius: 2px 0 0 2px;
+  position: relative;
+  top: 0;
+  left: 0px;
+  margin: 1px 0 0 0;
+  padding: 0;
+}
+.right_nav .right_nav_bottom .return_top .top, .right_nav .right_nav_bottom .small_ewm .top {
+  display: inline-block;
+  background: url(../img/ibar_sprites.png) no-repeat;
+  cursor: pointer;
+  height: 19px;
+  width: 18px;
+  vertical-align: top;
+  position: absolute;
+  width: 21px;
+  height: 24px;
+  top: 7px;
+  left: 7px;
+  background-position: -35px -103px;
+}
+.right_nav .right_nav_bottom .small_ewm .icon_ewm {
+  width: 15px;
+  height: 15px;
+  background: url(../img/nhj18_ewm_icon.png) no-repeat;
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+.right_nav .right_nav_bottom .big_ewm {
+  width: 108px;
+  height: 143px;
+  position: absolute;
+  left: -74px;
+  bottom: -143px;
+}
+.right_nav .right_nav_bottom .chatBtn {
+  background-color: #f81234;
+  border-radius: 5px 5px 0px 0px;
+  right: 20px;
+  bottom: 0;
+  padding: 8px 10px;
+  position: fixed;
+  z-index: 3;
+}
+
+.setting, .star {
+  background: url(../img/ibar_sprites.png) no-repeat;
+  background-position: -32px 0;
+  cursor: pointer;
+  vertical-align: top;
+  position: absolute;
+  width: 24px;
+  height: 27px;
+  top: 5px;
+  left: 6px;
+}
+
+.star {
+  background-position: -37px -52px;
+}
+
+/*# sourceMappingURL=index.css.map */

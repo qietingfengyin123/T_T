@@ -1,0 +1,37 @@
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+fieldset,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+    border: 0
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+$innerwidth:1200px;
+$border:1px solid red;
+@mixin borderstyle($borderColor:#ccc,$borderWidth:1px,$borderStyle:solid){
+    border:$borderColor $borderWidth $borderStyle;
+}
+
+
+@import "header";
+@import "nav";
+@import "banner";
+@import "main";
+@import "wraper";
+@import "info";
+@import "footer";
+@import "right_nav";

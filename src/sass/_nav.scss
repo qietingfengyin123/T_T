@@ -1,0 +1,209 @@
+@charset "utf-8";
+$navHeight:43px;
+
+.nav{
+    height:165px;
+    .nav_top{
+        width: $innerwidth;
+        margin: 0 auto;
+        height: 120px;
+        h2{
+            width: 240px;
+            height: 117px;
+            float: left;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+        }
+        .nav_top_right{
+            width: 960px;
+            padding-top: 37px;
+            float: left;
+            position: relative;
+            .logo_right{
+                position: absolute;
+                right: 0px;
+                top: 8px;
+            }
+        }
+    }
+}
+
+.area{
+    width: 84px;
+    float: left;
+    text-align: center;
+    dt{
+        a{
+            color: #333;
+            line-height: 26px;
+            font-weight: bold;
+        }
+    }
+    dd{
+        width: 61px;
+        height: 21px;
+        border: 1px solid #e5e5e5;
+        display: inline-block;
+        position: relative;
+        background-color: #ffffff;
+        a{
+            color: #a0a0a0;
+            font-size: 12px;
+        }
+        .area_info{
+            display: none;
+        }
+    }
+}
+
+.search{
+    width: 439px;
+    float: left;
+    margin-left: 58px;
+    dt{
+        display: table;
+        .search_input{
+            width: 256px;
+            height: 32px;
+            @include borderstyle(1px,#e60012,solid);
+            border-right: none;
+            padding-left: 40px;
+            font-size: 12px;
+            color: #666666;
+            float: left;
+            outline: none;
+            background: url(https://www.lecuntao.com/homenew/templates/default/images/sc_fdj.png?v=42a074f765) 12px 7px no-repeat;
+        }
+        .search_l_btn{
+            width: 70px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 14px;
+            float: left;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            background-color: #e60012;
+            margin-right: 2px;
+        }
+        .search_r_btn{
+            @extend .search_l_btn;
+            background-color: #666666;
+            margin: 0;
+        }
+    }  
+    dd{
+        a{
+            font-size: 12px;
+            line-height: 22px;
+            height: 22px;
+            margin-right: 15px;
+            color: #999;
+            font-family: "宋体", Arial;
+        }
+    }
+}
+
+.mycart{
+    width: 138px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #dfdfdf;
+    background-color: #f9f9f9;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 20px;
+    b{
+        width: 18px;
+        height: 14px;
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        text-align: center;
+        right: 18px;
+        top: -3px;
+        color: #ffffff;
+        background: url(../img/isprite.png) -19px 0px no-repeat;
+    }
+    a{
+        width: 92px;
+        height: 32px;
+        display: block;
+        color: #333;
+        font-size: 12px;
+        padding-left: 46px;
+        background: url(../img/isprite.png) -459px 8px no-repeat;
+        i{
+            width: 15px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(../img/isprite.png) -33px -17px no-repeat;
+        }
+    }
+}
+
+.nav_bottom{
+    height: $navHeight;
+    border-bottom: 2px solid #e60012;
+}
+
+.nav_bottom_inner{
+    width: $innerwidth;
+    height: $navHeight;
+    margin: 0 auto;
+    position: relative;
+    .nav_b_l{
+        float: left;
+        width: 212px;
+        font-size: 16px;
+        height: $navHeight;
+        background-color: #f32613;
+        padding-bottom: 2px;
+        a{
+            width: 212px;
+            height: $navHeight;
+            line-height: $navHeight;
+            display: block;
+            padding-left: 16px;
+            color: #fff;
+            .icon{
+                width: 21px;
+                height: $navHeight;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+                background: url(../img/isprite.png) -59px 15px no-repeat;
+            }
+        }
+    }
+    .nav_b_r{
+        width: 960px;
+        float: left;
+        margin-left: 4px;
+        li{
+            float: left;
+            line-height: $navHeight;
+            height: $navHeight;
+            font-size: 15px;
+            padding: 0 18px;
+            a{
+                color: #000;
+            }
+            .red_a{
+                color: #e60012;
+            }
+            &:hover{
+                a{
+                    color:#e60012;   
+                }
+            }
+        }
+    }
+}
+
+
+

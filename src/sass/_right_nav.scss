@@ -1,0 +1,134 @@
+.right_nav{
+    width: 34px;
+    height: 600px;
+    background: url(../img/bg34.png) repeat-y;
+    position: fixed;
+    right: -1px;
+    bottom: 150px;
+    ul{
+        position: absolute;
+        top: 190px;
+        left: 0px;
+        width: 34px;
+        li{
+            position: relative;
+            .my_portrait{
+                display: block;
+                width: 34px;
+                height: 35px;
+                color: #d8d8d8;
+                font-size: 14px;
+                background: #393b40;
+                border-radius: 2px 0 0 2px;
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-top: 1px;
+            }
+            .floor_nav_info{
+                @extend .my_portrait;
+                line-height: 16px;
+                width: 34px;
+                height: 116px;
+                color: #fff;
+                .shop_car{
+                    position: absolute;                  
+                    width: 21px;
+                    height: 20px;
+                    top: 7px;
+                    left: 6px;
+                    background: url(../img/ibar_sprites.png) no-repeat;
+                    background-position: -35px -31px;
+                }
+                .nav_car{
+                    width: 16px;
+                    display: block;
+                    height: 48px;
+                    margin: 34px 0 0 10px;
+                    cursor: pointer;
+                }
+            }
+            .myfavorite{
+                @extend .my_portrait;
+            }
+        }
+    }
+    .right_nav_bottom{
+        top: 535px;
+        .return_top{
+            display: block;
+            width: 34px;
+            height: 35px;
+            color: #d8d8d8;
+            font-size: 14px;
+            background: #393b40;
+            border-radius: 2px 0 0 2px;
+            position: relative;
+            top: 0;
+            left: 0px;
+            margin: 1px 0 0 0;
+            padding: 0;
+            .top{
+                display: inline-block;
+                background: url(../img/ibar_sprites.png) no-repeat;
+                cursor: pointer;
+                height: 19px;
+                width: 18px;
+                vertical-align: top;
+                position: absolute;
+                width: 21px;
+                height: 24px;
+                top: 7px;
+                left: 7px;
+                background-position: -35px -103px;
+            }
+        }
+        .small_ewm{
+            @extend .return_top;
+            .icon_ewm{
+                width: 15px;
+                height: 15px;
+                background: url(../img/nhj18_ewm_icon.png) no-repeat;
+                display: inline-block;
+                margin: 10px 0 0 10px;
+            }
+        }
+        .big_ewm{
+            width: 108px;
+            height: 143px;
+            position: absolute;
+            left: -74px;
+            bottom: -143px;
+        }
+        .chatBtn{
+            background-color: rgb(248, 18, 52);
+            border-radius: 5px 5px 0px 0px;
+            right: 20px; 
+            bottom: 0;
+            padding: 8px 10px;
+            position: fixed;
+            z-index: 3;
+        }
+    }
+}
+
+.setting{
+    background: url(../img/ibar_sprites.png) no-repeat;
+    background-position: -32px 0;
+    cursor: pointer;
+    vertical-align: top;
+    position: absolute;
+    width: 24px;
+    height: 27px;
+    top: 5px;
+    left: 6px;
+}   
+
+.star{
+    @extend .setting;
+    background-position: -37px -52px;
+}
+
+
+
+

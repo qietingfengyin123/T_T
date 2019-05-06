@@ -1,0 +1,101 @@
+@charset "utf-8";
+.info{
+    width: 100%;
+    margin: 65px auto 0 auto;
+    background-color: #f9f9f9;
+    display: table;
+    border-top: 1px solid #f1f1f1;
+    .info_inner{
+        width: 1171px;
+        padding-left: 29px;
+        height: 214px;
+        padding-top: 49px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        display: table;
+        position: relative;
+    }
+}
+
+.info_dl{
+    width: 166px;
+    float: left;
+    dt{
+        font-size: 18px;
+        line-height: 43px;
+        height: 43px;
+        color: #333333;
+        a{
+            color: #333333;
+        }
+    }
+    dd{
+        line-height: 26px;
+        height: 26px;
+        font-size: 12px;   
+        position: relative;
+        a{
+            color: #999999;
+        }
+    }
+}
+
+.ewm{
+    position: absolute; 
+    left: 57px; 
+    top: 21px; 
+    display: none;
+    width: 108px;
+    height: 143px;
+}
+
+.wx{ 
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+    background: url(../img/isprite.png) -338px -142px no-repeat;
+}
+
+.wb{
+    @extend .wx;
+    background-position: -306px -142px;
+}
+
+.qrcode{
+    padding-top: 15px;
+    float: right;
+    display: table;
+    li{
+        width: 90px;
+        margin-right: 8px;
+        float: left;
+        h2{
+            line-height: 27px;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            color:  #666;
+        }
+    }
+}
+
+.icon_car{
+    width: 116px;
+    height: 58px;
+    background: url(https://www.lecuntao.com/homenew/templates/default/images/car.png?v=1c53c827f9) 0 0 no-repeat;
+    position: absolute;
+    left: 4px;
+    top: -22px;
+}
+
+.icon_home{
+    width: 252px;
+    height: 109px;
+    background: url(https://www.lecuntao.com/homenew/templates/default/images/home.png?v=5858808d31) 0 0 no-repeat;
+    position: absolute;
+    right: 9px;
+    top: -65px;
+}

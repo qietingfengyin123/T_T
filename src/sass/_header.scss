@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+$navLiHeight:32px;
+$bottom_arrow:13px;
+$font:12px;
+
+.header{
+    border-bottom:1px solid #e7e7e7;
+    background: #f1f1f1;
+}
+
+.head-inner{
+    width:$innerwidth;
+    height:$navLiHeight;
+    line-height: $navLiHeight;
+    margin:0 auto;
+    color: #666;
+    
+}
+
+.head-inner{
+    h2{//顶部的左边
+        font-size: $font;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+        float: left;
+    }
+}
+
+.head_nav{// 头部顶部的右边部分
+    float: right;
+    li{
+        min-width: 80px;
+        float: left;
+        text-align: center;
+        height: $navLiHeight;
+        line-height: $navLiHeight;
+        position: relative;
+        font-size: 12px;
+        a{
+            color: #666;
+            font-size: $font;
+            text-align: center;
+        }
+        i{
+            width: $bottom_arrow;
+            height: $bottom_arrow;
+            margin-left: 3px;
+            display: inline-block;
+            background: url(../img/isprite.png) 4px 4px no-repeat;
+            vertical-align: middle;
+        }
+        b{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            color: #dfdfdf;
+            font-weight: 400;
+            font-size: $font;
+        }
+    }
+}
+
+.myindent{//我的乐村淘的二级导航
+    width: 79px;
+    background-color: #ffffff;
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    border: solid 1px #F0F0F0;
+    border-top-color: #ffffff;
+}

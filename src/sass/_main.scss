@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@for $i from 1 through 10{
+    .main_#{$i}{
+        height: 516px;
+        margin-top: 35px;
+    }
+}
+
+.main_floor{
+    width: $innerwidth;
+    margin: 35px auto 0 auto;
+    .floor_title{
+        height: 52px;
+        line-height: 52px;
+        background: transparent;
+        .floor_h2{
+            padding-left: 40px;
+            position: relative;
+            font-size: 20px;
+            color: #000000;
+            .icon_floor{
+                position: absolute;
+                top: 13px;
+                left: 0;
+                width: 21px;
+                height: 35px;
+                padding-right: 10px;
+                background: url(https://www.lecuntao.com/homenew/templates/default/images/lct_floor.png?v=b52157f53a) no-repeat 0 0;
+                font-size: 13px;
+                color: #fff;
+                text-align: center;
+                font-style: normal;
+                line-height: 35px;
+            }
+        }      
+    }
+    .floor_bottom_l{
+        width: 300px;
+        float: left;
+    }
+}
+
+.floor_l_base{
+    width: 300px;
+    height: 177px;
+    background: #e0aaf8;
+}
+
+.floor_l_base_info{
+    padding: 0px 6px 0px 15px;
+    li{
+        height: 43px;
+        line-height: 43px;
+        border-bottom: 1px solid #db8cff;
+        a{
+            color: #ffffff;
+            display: inline-block;
+            margin-right: 4px;
+            width: 62px;
+            font-size: 12px;
+            span{
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0px 7px 0px 7px;
+                background: #d378fb;
+            }
+        }
+    }
+}
+
+.main_2{
+    .floor_l_base{
+        background: #2ed0ff;  
+        li{
+            border-bottom: 1px solid #00c3fa;
+            span{
+                background: #00c3fa;
+            }
+        }
+    }        
+}
+
+.main_3{
+    .floor_l_base{
+        background: #fe522f;
+        li{
+            border-bottom: 1px solid #ee4a2a;
+            span{
+                background: #ee4a2a;
+            }
+        }
+    }        
+}
+
+.main_5{
+    .floor_l_base{
+        background: #c1382a;
+        li{
+            border-bottom: 1px solid #8f1003;
+            span{
+                background: #8f1003;
+            }
+        }
+    }        
+}
+
+.separator1{
+    background: #e0aaf8;
+    width: $innerwidth;
+    height: 2px;
+}
+
+.separator2{
+    @extend .separator1;
+    background: #2ed0ff;
+}
+
+.separator3{
+    @extend .separator1;
+    background: #fe522f;
+}
+
+.separator4{
+    @extend .separator1;
+    background: #e0aaf8;
+}
+
+.separator5{
+    @extend .separator1;
+    background: #c1382a;
+}

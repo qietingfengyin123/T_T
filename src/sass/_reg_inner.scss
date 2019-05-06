@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+.reg_wrap{
+    width: 100%;
+    border-top: 2px solid #eb0000;
+    padding-top: 25px;
+    .reg_inner{
+        width: 718px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 42px 0 50px 282px;
+        li{
+            position: relative;
+            height: 48px;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.tel{
+    float: left;
+    width: 438px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #bbbbbb;
+    background: #faf9f9;
+    position: relative;
+    b{
+        width: 13px;
+        height: 21px;
+        background: url(../img/login_sprite.png) no-repeat -41px 0;
+        margin: 14px 16px 0 17px;
+        float: left;
+    }
+    input{
+        width: 385px;
+        float: left;
+        height: 48px;
+        background: #faf9f9;
+        line-height: 48px;
+        border: 0;
+        color: #333333;
+        font-size: 14px;
+        outline: none;
+    }
+}
+
+.yzm{
+    @extend .tel;
+    width: 259px;
+    b{
+        width: 26px;
+        height: 20px;
+        background-position:  0 -71px;
+        margin: 14px 14px 0 15px;
+    }
+    input{
+        width: 110px;
+    }
+}
+
+.note{
+    @extend .tel;
+    width: 284px;
+    b{
+        width: 17px;
+        height: 17px;
+        background-position: -41px -28px;
+        margin: 16px 16px 0 17px;
+    }
+    input{
+        width: 234px;
+    }
+}
+
+.reg_password{
+    @extend .tel;
+    b{
+        width: 19px;
+        height: 21px;
+        background-position: 0px -45px;
+        margin: 14px 16px 0 17px;
+    }
+}
+
+.reg_email{
+    float: left;
+    line-height: 48px;
+    padding-left: 10px;
+    color: #666666;
+    font-size: 14px;
+    i{
+        font-style: normal;
+        a{
+            color: #03a9f4;
+        }
+    }
+}
+
+.yzm_img{
+    @extend .reg_email;
+    a{
+        display: inline-block;
+        width: 62px;
+        line-height: 26px;
+        padding: 0 5px 0 12px;
+        color: #333;
+        em{
+            display: block;
+            float: right;
+            width: 19px;
+            height: 16px;
+            background: url(../img/login_sprite.png) no-repeat;
+            margin: 5px 0 0 0;
+            font-style: normal;
+        }
+    }
+}
+
+.get_yzm{
+    float: left;
+    margin-left: 14px;
+    width: 138px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    background: #faf9f9;
+    font-size: 14px;
+    font-family: "宋体";
+    outline: none;
+    cursor: pointer;
+}
+
+.reg_login{
+    dt{
+        font-size: 14px;
+        padding: 25px 0;
+        color: #000;
+        a{
+            color: #eb0000;
+        }
+    }
+    dd{
+        #register{
+            width: 440px;
+            height: 50px;
+            line-height: 50px;
+            background: #eb0000;
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            border: 0;
+            cursor: pointer;
+        }
+        #login{
+            width: 438px;
+            height: 48px;
+            line-height: 48px;
+            background: #fff;
+            border: 1px solid #03a9f4;
+            text-align: center;
+            color: #03a9f4;
+            font-size: 18px;
+            margin-top: 25px;
+            position: relative;
+            cursor: pointer;
+        }
+    }
+}
