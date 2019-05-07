@@ -66,8 +66,10 @@ $font:12px;
     width: 79px;
     background-color: #ffffff;
     position: absolute;
+    z-index: 5;
     left: -1px;
     top: 32px;
     border: solid 1px #F0F0F0;
     border-top-color: #ffffff;
+    display: none;
 }

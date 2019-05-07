@@ -58,10 +58,12 @@
   width: 79px;
   background-color: #ffffff;
   position: absolute;
+  z-index: 5;
   left: -1px;
   top: 32px;
   border: solid 1px #F0F0F0;
   border-top-color: #ffffff;
+  display: none;
 }
 
 .nav {
@@ -259,6 +261,105 @@
 }
 .nav_bottom_inner .nav_b_r li:hover a {
   color: #e60012;
+}
+
+.secondary0 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 0px;
+  display: none;
+}
+
+.secondary1 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 45px;
+  display: none;
+}
+
+.secondary2 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 90px;
+  display: none;
+}
+
+.secondary3 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 135px;
+  display: none;
+}
+
+.secondary4 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 180px;
+  display: none;
+}
+
+.secondary5 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 225px;
+  display: none;
+}
+
+.secondary6 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 270px;
+  display: none;
+}
+
+.secondary7 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 315px;
+  display: none;
+}
+
+.secondary8 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 360px;
+  display: none;
+}
+
+.secondary9 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 405px;
+  display: none;
+}
+
+.secondary10 {
+  width: 109px;
+  height: 495px;
+  position: absolute;
+  left: 212px;
+  top: 450px;
+  display: none;
 }
 
 .banner {
@@ -1085,41 +1186,6 @@
 .right_nav ul li {
   position: relative;
 }
-.right_nav ul li .my_portrait, .right_nav ul li .floor_nav_info, .right_nav ul li .myfavorite {
-  display: block;
-  width: 34px;
-  height: 35px;
-  color: #d8d8d8;
-  font-size: 14px;
-  background: #393b40;
-  border-radius: 2px 0 0 2px;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-top: 1px;
-}
-.right_nav ul li .floor_nav_info {
-  line-height: 16px;
-  width: 34px;
-  height: 116px;
-  color: #fff;
-}
-.right_nav ul li .floor_nav_info .shop_car {
-  position: absolute;
-  width: 21px;
-  height: 20px;
-  top: 7px;
-  left: 6px;
-  background: url(../img/ibar_sprites.png) no-repeat;
-  background-position: -35px -31px;
-}
-.right_nav ul li .floor_nav_info .nav_car {
-  width: 16px;
-  display: block;
-  height: 48px;
-  margin: 34px 0 0 10px;
-  cursor: pointer;
-}
 .right_nav .right_nav_bottom {
   top: 535px;
 }
@@ -1174,6 +1240,68 @@
   position: fixed;
   z-index: 3;
 }
+.right_nav .right_nav_bottom .chatBtn img {
+  margin: 0px 5px -6px 0px;
+  width: 25px;
+  height: 25px;
+}
+.right_nav .right_nav_bottom .chatBtn .consult {
+  color: #fff;
+}
+
+.my_portrait, .floor_nav_info, .myfavorite {
+  display: block;
+  width: 34px;
+  height: 35px;
+  color: #d8d8d8;
+  font-size: 14px;
+  background: #393b40;
+  border-radius: 2px 0 0 2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 1px;
+}
+
+.floor_nav_info {
+  line-height: 16px;
+  width: 34px;
+  height: 116px;
+  color: #fff;
+  display: table;
+}
+.floor_nav_info .shop_car {
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  top: 7px;
+  left: 6px;
+  background: url(../img/ibar_sprites.png) no-repeat;
+  background-position: -35px -31px;
+}
+.floor_nav_info .nav_car {
+  width: 16px;
+  display: block;
+  height: 48px;
+  position: absolute;
+  top: 34px;
+  left: 10px;
+  cursor: pointer;
+}
+.floor_nav_info .cart_num {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fe8125;
+  text-align: center;
+  line-height: 17px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 9px;
+  bottom: 10px;
+}
 
 .setting, .star {
   background: url(../img/ibar_sprites.png) no-repeat;
@@ -1189,6 +1317,41 @@
 
 .star {
   background-position: -37px -52px;
+}
+
+.stairs {
+  position: fixed;
+  top: 300px;
+  left: 4.5px;
+  width: 35px;
+  overflow: hidden;
+}
+.stairs ul {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.stairs ul li {
+  width: 35px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-bottom: 1px solid #e9e8ed;
+}
+.stairs ul li a {
+  font-size: 14px;
+  font-family: Arial;
+  color: #625351;
+}
+.stairs ul .back_top {
+  border: 0;
+}
+.stairs ul .back_top a {
+  display: inline-block;
+  width: 35px;
+  height: 40px;
+  background: url(../img/isprite.png) no-repeat -429px -129px;
 }
 
 /*# sourceMappingURL=index.css.map */

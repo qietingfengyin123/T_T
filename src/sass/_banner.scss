@@ -1,6 +1,16 @@
 @charset "utf-8";
 $dot:12px;
 $borderLine:1px solid #e9e8ed;
+@for $i from 0 through 10{
+    .secondary#{$i}{
+        width: 109px;
+        height: 495px;
+        position: absolute;
+        left: 212px;
+        top: 45px*$i;
+        display: none;
+    }
+}
 
 .banner{
     height: 505px;
