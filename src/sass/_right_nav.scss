@@ -16,6 +16,9 @@
     }
     .right_nav_bottom{
         top: 535px;
+        .back{
+            display: none;
+        }
         .return_top{
             display: block;
             width: 34px;
@@ -155,6 +158,21 @@
     background-position: -37px -52px;
 }
 
+.mp_tooltip{
+    height: 35px;
+    line-height: 35px;
+    width: 74px;
+    position: absolute;
+    z-index: 2;
+    left: 34px;
+    top: 0px;
+    background: #d20000;
+    color: #fff;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    border-radius: 2px 0 0 2px;
+}
 
 
 

@@ -7,7 +7,7 @@ $borderLine:1px solid #e9e8ed;
         height: 495px;
         position: absolute;
         left: 212px;
-        top: 45px*$i;
+        top: -45px*$i;
         display: none;
     }
 }
@@ -34,6 +34,12 @@ $borderLine:1px solid #e9e8ed;
         border-bottom: 1px solid #e02e3c;
         position: relative;
         z-index: 2;
+        .sel{
+            background: #ffffff;
+            border: 1px solid #666;
+            border-left: 0;
+            color: #333;
+        }
         a{
             padding-left: 16px;
             font-size: 13px;
@@ -166,7 +172,7 @@ $borderLine:1px solid #e9e8ed;
         left: 19px;
         top: 206px;
         background: url(../img/isprite.png) 0px -212px no-repeat;
-        z-index: 3;
+        display: none;
     }
     .btn_right{//轮播图右边的按钮
         @extend .btn_left;//继承左边按钮的属性

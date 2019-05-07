@@ -38,6 +38,12 @@ $font:12px;
         line-height: $navLiHeight;
         position: relative;
         font-size: 12px;
+        &:hover{
+            .myindent{
+                display: block;
+            }
+            background: #ffffff;
+        }
         a{
             color: #666;
             font-size: $font;

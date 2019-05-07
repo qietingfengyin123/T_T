@@ -32,6 +32,12 @@
   position: relative;
   font-size: 12px;
 }
+.head_nav li:hover {
+  background: #ffffff;
+}
+.head_nav li:hover .myindent {
+  display: block;
+}
 .head_nav li a {
   color: #666;
   font-size: 12px;
@@ -206,6 +212,35 @@
   background: url(../img/isprite.png) -33px -17px no-repeat;
 }
 
+.cart_list {
+  display: none;
+  font-size: 14px;
+  width: 300px;
+  height: 70px;
+  background: #f5f5f5;
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+}
+.cart_list .h2 {
+  background: #fff;
+  padding-left: 10px;
+}
+.cart_list .h3 {
+  width: 300px;
+  height: 39px;
+  display: table;
+  padding-left: 10px;
+}
+.cart_list .h3 span {
+  float: left;
+}
+.cart_list .h3 .ctlt_buy {
+  float: right;
+}
+
 .nav_bottom {
   height: 43px;
   border-bottom: 2px solid #e60012;
@@ -277,7 +312,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 45px;
+  top: -45px;
   display: none;
 }
 
@@ -286,7 +321,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 90px;
+  top: -90px;
   display: none;
 }
 
@@ -295,7 +330,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 135px;
+  top: -135px;
   display: none;
 }
 
@@ -304,7 +339,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 180px;
+  top: -180px;
   display: none;
 }
 
@@ -313,7 +348,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 225px;
+  top: -225px;
   display: none;
 }
 
@@ -322,7 +357,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 270px;
+  top: -270px;
   display: none;
 }
 
@@ -331,7 +366,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 315px;
+  top: -315px;
   display: none;
 }
 
@@ -340,7 +375,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 360px;
+  top: -360px;
   display: none;
 }
 
@@ -349,7 +384,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 405px;
+  top: -405px;
   display: none;
 }
 
@@ -358,7 +393,7 @@
   height: 495px;
   position: absolute;
   left: 212px;
-  top: 450px;
+  top: -450px;
   display: none;
 }
 
@@ -385,6 +420,12 @@
   border-bottom: 1px solid #e02e3c;
   position: relative;
   z-index: 2;
+}
+.banner_l li .sel {
+  background: #ffffff;
+  border: 1px solid #666;
+  border-left: 0;
+  color: #333;
 }
 .banner_l li a {
   padding-left: 16px;
@@ -517,7 +558,7 @@
   left: 19px;
   top: 206px;
   background: url(../img/isprite.png) 0px -212px no-repeat;
-  z-index: 3;
+  display: none;
 }
 .banner_c .btn_right {
   left: 719px;
@@ -794,6 +835,75 @@
   float: left;
 }
 
+.flr_ua {
+  width: 900px;
+  float: left;
+}
+.flr_ua li {
+  float: left;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  width: 299px;
+  height: 230px;
+  overflow: hidden;
+  position: relative;
+}
+.flr_ua li h3 {
+  color: #333;
+  font-size: 16px;
+  padding-top: 7px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 400;
+}
+.flr_ua li span {
+  color: #999;
+  font-size: 12px;
+  display: block;
+  height: 22px;
+  text-align: center;
+}
+.flr_ua li .flr_ra_img {
+  height: 160px;
+  width: 160px;
+  margin: 0px auto;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+.flr_ua li .flr_ra_img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.flr_ua li .flr_ua_price {
+  position: absolute;
+  height: 33px;
+  width: 100%;
+  line-height: 33px;
+  background: #e20016;
+  bottom: -34px;
+}
+.flr_ua li .flr_ua_price .fl {
+  float: left;
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.flr_ua li .flr_ua_price .fr {
+  height: 33px;
+  line-height: 33px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+}
+
 .floor_l_base {
   width: 300px;
   height: 177px;
@@ -984,6 +1094,10 @@
 }
 .news li h6 a {
   color: #ffffff;
+}
+
+.myscroll {
+  position: relative;
 }
 
 .newscroll {
@@ -1189,6 +1303,9 @@
 .right_nav .right_nav_bottom {
   top: 535px;
 }
+.right_nav .right_nav_bottom .back {
+  display: none;
+}
 .right_nav .right_nav_bottom .return_top, .right_nav .right_nav_bottom .small_ewm {
   display: block;
   width: 34px;
@@ -1319,12 +1436,29 @@
   background-position: -37px -52px;
 }
 
+.mp_tooltip {
+  height: 35px;
+  line-height: 35px;
+  width: 74px;
+  position: absolute;
+  z-index: 2;
+  left: 34px;
+  top: 0px;
+  background: #d20000;
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  border-radius: 2px 0 0 2px;
+}
+
 .stairs {
   position: fixed;
   top: 300px;
   left: 4.5px;
   width: 35px;
   overflow: hidden;
+  display: none;
 }
 .stairs ul {
   overflow: hidden;
@@ -1339,10 +1473,14 @@
   overflow: hidden;
   border-bottom: 1px solid #e9e8ed;
 }
-.stairs ul li a {
+.stairs ul li .louc_btn, .stairs ul li .etitle {
   font-size: 14px;
   font-family: Arial;
   color: #625351;
+}
+.stairs ul li .etitle {
+  display: none;
+  color: red;
 }
 .stairs ul .back_top {
   border: 0;
