@@ -546,6 +546,9 @@
 }
 .banner_c li {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .banner_c .active {
   display: block;
@@ -559,6 +562,7 @@
   top: 206px;
   background: url(../img/isprite.png) 0px -212px no-repeat;
   display: none;
+  z-index: 999;
 }
 .banner_c .btn_right {
   left: 719px;
@@ -839,7 +843,8 @@
   width: 900px;
   float: left;
 }
-.flr_ua li {
+
+.flr_ua_li {
   float: left;
   border-right: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
@@ -848,22 +853,26 @@
   overflow: hidden;
   position: relative;
 }
-.flr_ua li h3 {
+.flr_ua_li h3 {
   color: #333;
   font-size: 16px;
   padding-top: 7px;
+  margin: 0 auto;
   line-height: 28px;
   text-align: center;
   font-weight: 400;
+  width: 230px;
+  height: 28px;
+  overflow: hidden;
 }
-.flr_ua li span {
+.flr_ua_li span {
   color: #999;
   font-size: 12px;
   display: block;
   height: 22px;
   text-align: center;
 }
-.flr_ua li .flr_ra_img {
+.flr_ua_li .flr_ra_img {
   height: 160px;
   width: 160px;
   margin: 0px auto;
@@ -872,22 +881,22 @@
   text-align: center;
   position: relative;
 }
-.flr_ua li .flr_ra_img img {
+.flr_ua_li .flr_ra_img img {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
 }
-.flr_ua li .flr_ua_price {
+.flr_ua_li .flr_ua_price {
   position: absolute;
   height: 33px;
   width: 100%;
   line-height: 33px;
   background: #e20016;
-  bottom: -34px;
+  top: 230px;
 }
-.flr_ua li .flr_ua_price .fl {
+.flr_ua_li .flr_ua_price .fl {
   float: left;
   height: 33px;
   line-height: 33px;
@@ -896,7 +905,7 @@
   font-weight: bold;
   margin-left: 10px;
 }
-.flr_ua li .flr_ua_price .fr {
+.flr_ua_li .flr_ua_price .fr {
   height: 33px;
   line-height: 33px;
   color: #fff;

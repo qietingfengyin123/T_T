@@ -160,6 +160,9 @@ $borderLine:1px solid #e9e8ed;
     position: relative;
     li{
         display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
     .active{
         display: block;
@@ -173,6 +176,7 @@ $borderLine:1px solid #e9e8ed;
         top: 206px;
         background: url(../img/isprite.png) 0px -212px no-repeat;
         display: none;
+        z-index: 999;
     }
     .btn_right{//轮播图右边的按钮
         @extend .btn_left;//继承左边按钮的属性
