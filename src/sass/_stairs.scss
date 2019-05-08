@@ -1,0 +1,40 @@
+.stairs{
+    position: fixed;
+    top: 300px;
+    left: 4.5px;
+    width: 35px;
+    overflow: hidden;
+    display: none;
+    ul{
+        overflow: hidden;
+        background-color: rgba(255,255,255,.8);
+        li{
+            width: 35px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            border-bottom: 1px solid #e9e8ed;
+            .louc_btn{
+                font-size: 14px;
+                font-family: Arial;
+                color: #625351;
+            }
+            .etitle{
+                @extend .louc_btn;
+                display: none;
+                color: red;
+            }
+        }
+        .back_top{
+            border: 0;
+            a{
+                display: inline-block;
+                width: 35px;
+                height: 40px;
+                background: url(../img/isprite.png) no-repeat -429px -129px;
+            }
+        }
+    }
+}
