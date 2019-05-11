@@ -82,6 +82,13 @@ body {
   height: 48px;
   margin-bottom: 25px;
 }
+.reg_wrap .reg_inner li label {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  color: #e54747;
+  font-size: 14px;
+}
 
 .tel, .yzm, .note, .reg_password {
   float: left;
@@ -210,6 +217,7 @@ body {
   cursor: pointer;
 }
 .reg_login dd #login {
+  display: block;
   width: 438px;
   height: 48px;
   line-height: 48px;

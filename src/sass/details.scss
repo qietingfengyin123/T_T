@@ -213,20 +213,21 @@ $border:1px solid red;
             position: absolute;
             left: 0px;
             top: 0px;
-            visibility: hidden;
+            display: none;
             cursor: move;
         }
     }
     #bf {
         width: 400px;
-        height: 500px;
+        height: 400px;
         border: 1px solid #000;
         float: right;
         overflow: hidden;
         position: relative;
+        z-index: 999;
         top:-400px;
         left: 500px;
-        visibility: hidden;
+        display: none;
         #bpic{
             position: absolute;
             left: 0px;
@@ -308,4 +309,13 @@ $border:1px solid red;
         border-bottom: 1px solid #aaaaaa;
         background: url(../img/tel.png) no-repeat 0px 9px;
     }
+}
+
+.ncs_cart_popup{
+    display:none;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
 }

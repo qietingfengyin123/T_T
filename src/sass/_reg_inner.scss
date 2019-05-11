@@ -13,6 +13,14 @@
             position: relative;
             height: 48px;
             margin-bottom: 25px;
+            label{
+                position: absolute;
+                left: 0;
+                top: 52px;
+                color: #e54747;
+                font-size: 14px;
+                // display: none;
+            }
         }
     }
 }
@@ -154,6 +162,7 @@
             cursor: pointer;
         }
         #login{
+            display: block;
             width: 438px;
             height: 48px;
             line-height: 48px;

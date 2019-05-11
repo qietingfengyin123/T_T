@@ -12,40 +12,40 @@
 
 <body>
     <div class="header">
-            <div class="head_inner">
-                    <h2>
-                        <a href="http://10.31.163.53/lecuntao/src/index123.html">返回平台首页></a>
-                    </h2>
-                    <p>
-                        <span>
-                            <a href="#">
-                                <img src="img/logoIco.png">
-                            </a>
-                        </span>
-                        <i></i>
-                        <b class="b_login">用户注册</b>
-                    </p>
-                </div>
+        <div class="head_inner">
+            <h2>
+                <a href="http://10.31.163.53/lecuntao/src/index123.html">返回平台首页></a>
+            </h2>
+            <p>
+                <span>
+                    <a href="#">
+                        <img src="img/logoIco.png">
+                    </a>
+                </span>
+                <i></i>
+                <b class="b_login">用户注册</b>
+            </p>
+        </div>
     </div>
     <div class="reg_wrap">
         <div class="reg_inner">
-            <form method="POST" action="" class="form">
+            <form method="POST" action="http://10.31.163.53/lecuntao/php/reg_login/reg.php" id="form1">
                 <ul>
                     <li class="li1">
-                        <em></em>
+                        <label for="tel" class="error" id="tel-error"></label>
                         <p class="tel">
                             <b class="icon_phone"></b>
-                            <input type="text" placeholder="请输入您的手机号">
+                            <input type="text" name="tel" id="tel" placeholder="请输入您的手机号">
                         </p>
                         <span class="reg_email">
                             或<i><a href="#">邮箱注册</a></i>
                         </span>
                     </li>
                     <li class="li2">
-                        <em></em>
+                        <label for="yzm" class="error" id="yzm-error"></label>
                         <p class="yzm">
                             <b class="icon_code"></b>
-                            <input type="text" placeholder="请输入验证码">
+                            <input type="text" name="yzm" id="yzm" placeholder="请输入验证码">
                         </p>
                         <span class="yzm_img">
                             <img
@@ -54,25 +54,25 @@
                         </span>
                     </li>
                     <li class="li3">
-                        <em></em>
+                        <label for="message" class="error" id="message-error"></label>
                         <p class="note">
                             <b class="icon_note"></b>
-                            <input type="text" placeholder="请输入短信验证码">
+                            <input type="text" name="message" id="message" placeholder="请输入短信验证码">
                         </p>
                         <input type="button" value="获取验证码" class="get_yzm">
                     </li>
                     <li class="li4">
-                        <em></em>
+                        <label for="password1" class="error" id="password1-error"></label>
                         <p style="border-color: rgb(187, 187, 187); border-width: 1px" class="reg_password">
                             <b class="icon_lock"></b>
-                            <input type="password" placeholder="请输入密码">
+                            <input type="password" name="password1" id="password1" placeholder="请输入密码">
                         </p>
                     </li>
                     <li class="li5">
-                        <em></em>
+                        <label for="password2" class="error" id="password2-error"></label>
                         <p class="reg_password">
                             <b class="icon_lock"></b>
-                            <input type="password" placeholder="请再次输入密码">
+                            <input type="password" name="password2" id="password2" placeholder="请再次输入密码">
                         </p>
                     </li>
                 </ul>
@@ -81,16 +81,19 @@
                         <a href="#">《服务协议》</a>。
                     </dt>
                     <dd>
-                        <input type="submit" id="register" value="注册">
-                        <input type="button" id="login" value="已有账号?请登录">
-                            <i></i>
+                        <input type="submit" id="register" value="注册" name="submit">
+                        <a href="http://10.31.163.53/lecuntao/src/login.html" id="login">已有账号?请登录</a>
+                        <i></i>
                     </dd>
                 </dl>
             </form>
         </div>
     </div>
     <div class="footer"></div>
-    <script src="script/js/jquery.js"></script>
+    <script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/js/register.js" type="text/javascript" charset="utf-8"></script>
     <script>
         //引入公共部分的头部和底部
         // $('.header').load('reg_login_header.html');

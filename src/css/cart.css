@@ -234,7 +234,7 @@
   display: table;
   padding-left: 10px;
 }
-.cart_list .h3 span, .cart_list .h3 .sure_price .sure_delate input, .sure_price .sure_delate .cart_list .h3 input, .cart_list .h3 .sure_price .sure_delate .quanxuan, .sure_price .sure_delate .cart_list .h3 .quanxuan {
+.cart_list .h3 span {
   float: left;
 }
 .cart_list .h3 .ctlt_buy {
@@ -466,7 +466,7 @@ body {
   background: url(../img/top_tel.png) 0px 0px no-repeat;
   position: relative;
 }
-.head-user-menu span, .head-user-menu .sure_price .sure_delate input, .sure_price .sure_delate .head-user-menu input, .head-user-menu .sure_price .sure_delate .quanxuan, .sure_price .sure_delate .head-user-menu .quanxuan {
+.head-user-menu span {
   width: 130px;
   text-align: left;
   position: absolute;
@@ -546,89 +546,120 @@ body {
   background-position: 50% -144px;
 }
 
-form {
-  width: 1000px;
-  margin: 80px auto;
-}
-form .cart_table {
-  width: 100%;
-  text-align: center;
-  background-color: #ffffff;
-}
-form .cart_table a {
-  color: #666666;
+#container {
+  margin-top: 80px;
 }
 
-thead tr {
-  width: 100%;
-  border-bottom: 1px solid #ddd;
+.w {
+  width: 1000px;
+  margin: 0 auto;
 }
-thead tr th {
+.w .empty-cart {
+  height: 98px;
+  padding: 80px 0 120px;
+  color: #333;
+}
+.w .cart-thead {
+  height: 32px;
+  line-height: 32px;
+  margin: 0 0 10px;
+  padding: 5px 0;
+  background: #f3f3f3;
+  border: 1px solid #e9e9e9;
+  border-top: 0;
+}
+.w .cart-thead .cart-col {
+  float: left;
   height: 40px;
   line-height: 40px;
   background: #ffffff;
   color: #666;
   font-size: 14px;
   border-bottom: 1px solid #ddd;
+  text-align: center;
 }
-thead tr #th1 {
-  width: 38px;
-  position: relative;
+.w .cart-thead .t-checkbox {
+  width: 80px;
+  padding-left: 11px;
 }
-thead tr #th1 .check {
-  width: 50px;
-  position: absolute;
-  left: 35px;
+.w .cart-thead .t-goods {
+  width: 308px;
+  padding-left: 19px;
+}
+.w .cart-thead .t-prices {
+  width: 130px;
+}
+.w .cart-thead .t-quantity {
+  width: 210px;
+}
+.w .cart-thead .t-sum {
+  width: 170px;
+}
+.w .cart-thead .t-action {
+  width: 70px;
 }
 
-.introduce {
-  width: 365px;
+.goods-item {
+  padding: 0 10px 0 40px;
+  position: relative;
+  height: 122px;
+  background: #ffffff;
+}
+.goods-item .goods-info {
+  border-top: 1px solid #f1f1f1;
+}
+.goods-item .cell {
+  float: left;
+}
+.goods-item .b-checkbox {
+  position: absolute;
+  left: 30px;
+  top: 32px;
+  width: 30px;
+  height: 20px;
+  padding: 15px 0 10px 0;
+}
+.goods-item .b-goods {
   height: 89px;
   text-align: left;
   padding-left: 14px;
   padding-top: 17px;
   padding-bottom: 15px;
 }
-.introduce .cart_gds_img {
-  margin-right: 16px;
+.goods-item .b-goods .goods-pic {
+  width: 82px;
+  height: 82px;
+  margin-right: 10px;
+  border: 1px solid #eee;
   float: left;
 }
-.introduce .cart_gds_img img {
-  width: 73px;
-  height: 73px;
-  border: 1px solid #ddd;
+.goods-item .b-goods .goods-pic img {
+  width: 80px;
+  height: 80px;
 }
-.introduce .cart_gds_tit {
+.goods-item .b-goods .goods-msg {
   width: 250px;
   float: left;
   font-size: 14px;
-  text-align: left;
 }
-
-.cart_price {
-  color: #eb0000;
-  font-size: 14px;
+.goods-item .b-goods .goods-msg a {
+  color: #666666;
 }
-
-.cart_num i {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  border: 1px solid #ccc;
-  background-color: #dddddd;
-  display: inline-block;
-  font-style: normal;
-  text-align: center;
+.goods-item .b-price {
+  width: 112px;
+  padding: 47px 40px 10px 0;
+  overflow: hidden;
+  text-align: right;
 }
-.cart_num i a {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  color: #ffffff;
+.goods-item .b-price strong {
+  float: right;
 }
-.cart_num .ipt_num {
-  width: 44px;
-  height: 24px;
+.goods-item .b-quantity {
+  margin: 45px 0 0 45px;
+}
+.goods-item .b-quantity .quantity-form input {
+  width: 44px !important;
+  height: 24px !important;
   line-height: 24px;
   border: 1px solid #ccc;
   text-align: center;
@@ -638,8 +669,32 @@ thead tr #th1 .check {
   display: inline-block;
   vertical-align: bottom;
 }
+.goods-item .b-quantity .quantity-form .quantity-down, .goods-item .b-quantity .quantity-form .quantity-add {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  background-color: #dddddd;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+}
+.goods-item .b-sum {
+  width: 162px;
+  height: 20px;
+  padding: 45px 40px 15px 0;
+  text-align: right;
+}
+.goods-item .b-action {
+  width: 75px;
+  text-align: right;
+  padding: 35px 10px 10px 0;
+}
+.goods-item .b-action a {
+  color: #666666;
+}
 
-.sure_price {
+#cart-floatbar {
   background: #fff;
   height: 90px;
   width: 100%;
@@ -647,69 +702,77 @@ thead tr #th1 .check {
   font-size: 14px;
   position: relative;
   margin-top: 20px;
+  background: #ffffff;
 }
-.sure_price .sure_delate {
-  width: 20%;
+#cart-floatbar .select-all {
+  float: left;
+  color: #666;
   font-size: 14px;
-  display: table;
+  text-align: center;
+  width: 80px;
+  padding-left: 11px;
+  margin: 30px 0 0 2px;
 }
-.sure_price .sure_delate span, .sure_price .sure_delate input, .sure_price .sure_delate .quanxuan {
-  color: #2b7ee6;
-  left: 95px;
-  position: absolute;
-  top: 33px;
+#cart-floatbar .operation {
+  float: left;
+  height: 80px;
+  width: 310px;
+  line-height: 80px;
 }
-.sure_price .sure_delate span a, .sure_price .sure_delate input a, .sure_price .sure_delate .quanxuan a {
+#cart-floatbar .operation a {
   color: #666666;
+  margin-right: 10px;
 }
-.sure_price .sure_delate input {
-  left: 15px;
-  top: 37px;
-}
-.sure_price .sure_delate .quanxuan {
-  left: 50px;
-  top: 33px;
-  font-style: normal;
-  position: relative;
-  color: #666666;
-}
-
-.submit_sure_box {
-  width: 140px;
-  height: 50px;
+#cart-floatbar .btn-area {
   float: right;
-  margin-right: 23px;
-}
-.submit_sure_box .submit_sure {
   width: 140px;
   height: 50px;
   line-height: 50px;
-  border: none;
-  color: #fff;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  outline: 0;
-  background: #ff4d4d;
-}
-
-.four_goods_box {
-  float: right;
-  height: 60px;
-  min-width: 90px;
-  width: auto;
-  margin-right: 50px;
-}
-
-.price_goods_box {
-  min-width: 200px;
-  height: 90px;
-  float: right;
-  margin-right: 23px;
-  width: auto;
+  margin: 20px 20px 0 0;
   text-align: center;
+  background: #ff4d4d;
+  border-radius: 4px;
+}
+#cart-floatbar .btn-area a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+#cart-floatbar .price-sum {
+  float: right;
+  height: 80px;
+  line-height: 30px;
+  margin: 7px 20px 0 10px;
+  color: #666;
+  width: 220px;
+  background: #ffdddd;
+  text-align: center;
+}
+#cart-floatbar .price-sum .totalprice {
+  font-size: 28px;
+  color: #fc2525;
+  font-weight: 700;
+  margin-top: 20px;
+}
+#cart-floatbar .amount-sum {
+  float: left;
+  color: #999;
+  height: 44px;
+  line-height: 30px;
+  margin: 20px 20px 0;
+  cursor: pointer;
+}
+#cart-floatbar .amount-sum em {
+  font-size: 28px;
+  color: #333;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 3px;
+}
+
+.shop-ex {
+  text-align: right;
 }
 
 /*# sourceMappingURL=cart.css.map */

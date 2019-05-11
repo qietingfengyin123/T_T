@@ -607,14 +607,14 @@
   position: relative;
   height: 50px;
 }
-.banner_r .banner_r_top .log_reg, .banner_r .banner_r_middle .log_reg {
+.banner_r .banner_r_top .log_reg, .banner_r .banner_r_middle .log_reg, .banner_r .banner_r_top .decided, .banner_r .banner_r_middle .decided {
   width: 176px;
   padding: 0 11px;
   display: table;
   font-size: 14px;
   margin: 0 auto 15px auto;
 }
-.banner_r .banner_r_top .log_reg .login_btn, .banner_r .banner_r_middle .log_reg .login_btn {
+.banner_r .banner_r_top .log_reg .login_btn, .banner_r .banner_r_middle .log_reg .login_btn, .banner_r .banner_r_top .decided .login_btn, .banner_r .banner_r_middle .decided .login_btn {
   width: 83px;
   height: 24px;
   line-height: 24px;
@@ -625,7 +625,7 @@
   float: left;
   border-radius: 3px;
 }
-.banner_r .banner_r_top .log_reg .register_btn, .banner_r .banner_r_middle .log_reg .register_btn {
+.banner_r .banner_r_top .log_reg .register_btn, .banner_r .banner_r_middle .log_reg .register_btn, .banner_r .banner_r_top .decided .register_btn, .banner_r .banner_r_middle .decided .register_btn {
   width: 83px;
   height: 24px;
   line-height: 24px;
@@ -633,6 +633,9 @@
   text-align: center;
   float: right;
   border-radius: 3px;
+}
+.banner_r .banner_r_top .decided, .banner_r .banner_r_middle .decided {
+  display: none;
 }
 
 .welcome_l {

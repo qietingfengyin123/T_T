@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/re.css">
@@ -20,8 +20,8 @@
                 </dt>
             </dl>
             <h2>
-                <a href="javascript:;" class="st">请登录</a>
-                <a href="javascript:;" class="st">免费注册</a>
+                <a href="http://10.31.163.53/lecuntao/src/login.html" class="st">请登录</a>
+                <a href="http://10.31.163.53/lecuntao/src/register.html" class="st">免费注册</a>
             </h2>
             <ul class="head_nav">
                 <li>
@@ -59,9 +59,9 @@
         <div class="nav_top">
             <!-- 左边的logo -->
             <h2>
-                    <a href="http://10.31.163.53/lecuntao/src/index123.html">
-                        <img src="img/nmj18_logo.png">
-                    </a>
+                <a href="http://10.31.163.53/lecuntao/src/index123.html">
+                    <img src="img/nmj18_logo.png">
+                </a>
             </h2>
             <div class="nav_top_right">
 
@@ -69,8 +69,8 @@
                 <!-- 导航栏的搜索框，搜索商品 -->
                 <dl class="search" style="margin-left:120px;">
                     <dt>
-                        <form action="" method="get">
-                            <input type="text" value="" maxlength="60" placeholder="请输入您要搜索的关键字，多个用空格分开"
+                        <form action="" medivod="get">
+                            <input type="text" value="" maxlengdiv="60" placeholder="请输入您要搜索的关键字，多个用空格分开"
                                 class="search_input">
                             <input type="button" value="搜商品" class="search_l_btn">
                             <input type="button" value="搜店铺" class="search_r_btn">
@@ -92,6 +92,7 @@
         </div>
         <!-- 导航栏的下半部分-->
     </div>
+
     <div class="flowstep">
         <ol class="flowstep-5">
             <li class="step-first">
@@ -120,96 +121,131 @@
             </li>
         </ol>
     </div>
-    <div class="ncc-wrapper">
-        <div class="container_wrap">
-            <form action="" method="POST">
-                <table class="cart_table" cellpadding="0">
-                    <thead>
-                        <tr>
-                            <th id="th1">
-                                <span class="ckeck_btn">
-                                    <input type="checkbox">     
-                                </span>
-                                <span class="check">全选</span>
-                            </th>
-                            
-                            <th class="goods_name"><span>商品</span></th>
-                            <th>
-                                <span class="workshop_l">零售价</span>
-                            </th>
-                            <th>数量</th>
-                            <th>合计（元）</th>
-                            <th>操作</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <input type="checkbox">
-                            </td>
-                            <td class="introduce">
-                                <span class="cart_gds_img">
-                                    <a href="#">
-                                        <img src="http://img.lecuntao.com/data/upload/shop/store/goods/530/2018/11/09/530_05950704379579695_240.jpg">
-                                    </a>
-                                </span>
-                                <span class="cart_gds_tit">
-                                    <a href="#">电动缝纫机家用迷你电动多功能迷你吃厚手动微型缝纫机</a>
-                                </span>
-                            </td>
-                            <td class="cart_price">￥60.90</td>
-                            <td class="invalid">
-                                <span class="cart_num">
-                                    <i><a href="javascript:;" title="减少商品件数">–</a></i>
-                                    <input class="ipt_num" type="text" value="1">
-                                    <i><a href="JavaScript:;" title="增加商品件数" class="increase">+</a></i>
-                                </span>
-                            </td>
-                            <td class="cart_price">
-                                ￥<span>121.80</span>
-                            </td>
-                            <td>
-                                <a class="cart_del" href="javascript:">删除</a>
-                                <a class="cart_addfv" href="javascript:;">收藏</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+  
+    <div id="container" class="cart">
+        <div class="w">
+        	<!--购物车为空时显示的盒子-->
+            <div class="empty-cart">
+                <div class="empty-cart-msg">
+                    购物车空空的哦~，去看看心仪的商品吧~
+                    <a href="">去购物></a>
+                </div>
+            </div>
 
-                <div class="center">
-                    <div class="sure_price">
-                        <div class="sure_delate">
-                            <input type="checkbox">
-                            <em class="quanxuan">全选</em>
-                            <span><a href="javascript:;">清空购物车</a></span>
+            <!--包裹购物车-->
+			<div class="cart-wrap" style="display: block;">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="cart-col t-goods">商品</div>
+                                <div class="cart-col t-props"></div>
+                                <div class="cart-col t-prices">单价(元)</div>
+                                <div class="cart-col t-quantity">数量</div>
+                                <div class="cart-col t-sum">小计(元)</div>
+                                <div class="cart-col t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <div class="shop">
+                                            
+                                            <span class="shop-info">
+													<a href=""></a>
+												</span>
+                                            <div class="shop-ex">
+                                                购满￥99.00 已免运费
+                                                <span class="tips-icon" data-tips="部分超重超大商品运费单独收取，不在本功能范围内，准确运费以结算页为准"></span>
+                                            </div>
+                                        </div>
+                                        <div class="item-list">
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href=""></a>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="cell b-price">
+                                                        <strong>999</strong>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:;">-</a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:;">+</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        <strong>13488.00</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="javascript:;">删除</a><br><a href="javascript:;">收藏</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="submit_sure_box">
-                            <button class="submit_sure" type="button">
-                                <strong>确认订单</strong>
-                            </button>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
                         </div>
-                        <div class="price_goods_box">
-                            <p class="price_goods">应付金额(不含运费)<br>
-                                <strong class="price_tot">￥ 121.80</strong>
-                            </p>
+                        <div class="operation">
+                            <a href="javascript:;">删除选中的商品</a><a href="javascript:;">移到我的关注</a>
                         </div>
-
-                        <div class="four_goods_box">
-                            <p class="four_goods">商品（件)
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a href="">确认订单</a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">应付金额（不含运费）</span>
                                 <br>
-                                <strong>2</strong>
-                            </p>
+                                <span class="totalprice">￥0.00</span>
+
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>0</em> 件商品
+                                <b></b>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
-
-
+            </div>
+            <div class="goods-list goods-selected">
+                <ul>
+                  
+                </ul>
+            </div>
         </div>
-
-
-
     </div>
+
     <div class="info">
         <div class="info_inner">
             <dl class="ser_dl">
@@ -259,6 +295,8 @@
     <div class="footer"></div>
 
     <script src="script/js/jquery.js"></script>
+    <script src="script/js/cookie.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/js/cart.js" type="text/javascript" charset="utf-8"></script>
     <script>
         $('.footer').load('footer.html');
     </script>

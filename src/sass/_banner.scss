@@ -248,6 +248,10 @@ $borderLine:1px solid #e9e8ed;
                 border-radius: 3px;
             }
         }
+        .decided{
+            @extend .log_reg;
+            display: none;
+        }
     }
 }
 

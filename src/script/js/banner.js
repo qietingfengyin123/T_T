@@ -47,12 +47,14 @@
 
     function tab() {
         $btns.eq($num).addClass('active_dot').siblings().removeClass('active_dot');
-        $pics.eq($num).addClass('active').stop(true).animate({
-            opacity: 1
-        },500);        
-        $pics.eq($num).siblings().removeClass('active').stop(true).animate({
-            opacity: 0
-        },500)
+        $pics.eq($num).addClass('active')
+        // .stop(true).animate({
+        //     opacity: 1
+        // },500);        
+        $pics.eq($num).siblings().removeClass('active')
+        // .stop(true).animate({
+        //     opacity: 0
+        // },500)
     }
 })();
 

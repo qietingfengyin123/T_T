@@ -11,8 +11,54 @@
 </head>
 
 <body>
-    <!-- 头部的公共部分 -->
-    <div class="header"></div>
+    <!-- 头部 -->
+    <div class="header">
+            <div class="head-inner">
+                    <h2>HI!, 欢迎来乐村淘商城</h2>
+                    <ul class="head_nav">
+                        <li class="loginreg">
+                            <a href="http://10.31.163.53/lecuntao/src/login.html">登录</a>
+                            &nbsp;|&nbsp;
+                            <a href="http://10.31.163.53/lecuntao/src/register.html">注册</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">我的乐村淘</a>
+                            <b>|</b>
+                            <div class="myindent">
+                                <p><a href="javascript:;">待付款订单</a></p>
+                                <p><a href="javascript:;">待确认收货</a></p>
+                                <p><a href="javascript:;">待评价交易</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">客户服务<i></i></a>
+                            <b>|</b>
+                            <div class="myindent">
+                                <p><a href="javascript:;">商家入驻</a></p>
+                                <p><a href="javascript:;">帮助中心</a></p>
+                                <p><a href="javascript:;">售后服务</a></p>
+                                <p><a href="javascript:;"> 客服中心</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;">手机乐村淘<i></i></a>
+                            <b>|</b>
+                        </li>
+                        <li>
+                            <a href="javascript:;">管理后台<i></i></a>
+                            <b>|</b>
+                            <div class="myindent">
+                                    <p><a href="javascript:;">商家后台</a></p>
+                                    <p><a href="javascript:;">县级管理</a></p>
+                                    <p><a href="javascript:;">省级管理</a></p>
+                                </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" id="article">网站导航<i></i></a>
+                        </li>
+                    </ul>
+                </div>
+    </div>
 
     <!-- 头部下面的导航菜单 -->
     <div class="nav">
@@ -421,6 +467,9 @@
                         <a class="login_btn" href="http://10.31.163.53/lecuntao/src/login.html">登录</a>
                         <a class="register_btn" href="http://10.31.163.53/lecuntao/src/register.html">注册</a>
                     </p>
+                    <div class="decided">
+                            <a href="javascript:;">退出</a>
+                    </div>
                 </div>
                 <!-- banner右边中间新闻部分 -->
                 <div class="banner_r_middle">
@@ -1055,14 +1104,24 @@
 
 
     <script src="script/js/jquery.js"></script>
+    <script src="script/js/cookie.js"></script>
     <script src="script/js/index.js" type="text/javascript" charset="utf-8"></script>
     <script>
         //引入公共部分的头部和底部
-        $('.header').load('heade.html');
+        // $('.header').load('heade.html');
         $('.footer').load('footer.html');
     </script>
     <script src="script/js/banner.js"></script>
     <script src="script/js/louti.js"></script>
+    <script src="script/js/scroll.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('.myscroll').myScroll({
+            speed: 40, //数值越大，速度越慢
+            rowHeight: 47 //li的高度
+        });
+    });
+</script>
 </body>
 
 </html>
